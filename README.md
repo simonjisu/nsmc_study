@@ -49,7 +49,7 @@ embedding.
 2. Example
 
 ```
-visualize.py -2 715
+python3 visualize.py -2 715
 ```
 
 ## Example: Sample number 715
