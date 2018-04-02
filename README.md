@@ -31,8 +31,8 @@ embedding.
 
 1. Help
 
-* TYPE "-h" or "-help" behind "visualize
-
+> TYPE "-h" or "-help" behind "visualize
+>
 > INSERT ARGUMENTS behind "visualize.py"
 > * First
 >     * [-1] model1: 1 hidden layer, r=5
@@ -49,7 +49,7 @@ embedding.
 visualize.py -2 720
 ```
 
-## Example: Sample of number 720
+## Example: Sample Number 720
 
 ![](/figures/model1.png)
 
