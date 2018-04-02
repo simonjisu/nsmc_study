@@ -33,17 +33,18 @@ A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING: [https://arxiv.org/pdf/1703.0313
 embedding.
 
 1. Help
-* TYPE "-h" or "-help" behind "visualize
 
-INSERT ARGUMENTS behind "visualize.py"
-* First
-    * [-1] model1: 1 hidden layer, r=5
-    * [-2] model2: 1 hidden layer, r=20
-    * [-3] model3: 3 hidden layer, r=5
-* Second
-    * [-sample_idx] number from 0 to 781
-* Third
-    * [-(file_path.html)] file path, it is an optional, default is "./figures/(file_name)[sample_idx].html"
+> TYPE "-h" or "-help" behind "visualize
+> 
+> INSERT ARGUMENTS behind "visualize.py"
+> * First
+>     * [-1] model1: 1 hidden layer, r=5
+>     * [-2] model2: 1 hidden layer, r=20
+>     * [-3] model3: 3 hidden layer, r=5
+> * Second
+>     * [-sample_idx] number from 0 to 781
+> * Third
+>     * [-(file_path.html)] file path, it is an optional, default is "./figures/(file_name)[sample_idx].html"
 
 2. Example
 
