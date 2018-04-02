@@ -54,8 +54,8 @@ visualize.py -2 715
 
 ## Example: Sample number 715
 
-![](/figures/model1.png)
+![](/figures/model_1.png)
 
-![](/figures/model2.png)
+![](/figures/model_2.png)
 
-![](/figures/model3.png)
+![](/figures/model_3.png)
