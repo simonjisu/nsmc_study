@@ -25,6 +25,7 @@ A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING: [https://arxiv.org/pdf/1703.0313
 ## Get a Review Visualization
 
 0. Red Blocks
+
 Red Blocks means which words the embedding takes into account a lot, and which ones are skipped by the
 embedding.
 
