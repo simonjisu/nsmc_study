@@ -17,10 +17,13 @@ A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING: [https://arxiv.org/pdf/1703.0313
 |:-|:-|:-|:-|
 |180402|self_attn_1H_r5|0.7208|[link](https://nbviewer.jupyter.org/github/simonjisu/nsmc_study/blob/master/Notebooks/selfattn_1H_r5.ipynb)|
 |180402|self_attn_1H_r20|0.8460|[link](https://nbviewer.jupyter.org/github/simonjisu/nsmc_study/blob/master/Notebooks/selfattn_1H_r20.ipynb)|
-|180402|self_attn_3H_r5(over fitted)|0.8498|[link](https://nbviewer.jupyter.org/github/simonjisu/nsmc_study/blob/master/Notebooks/selfattn_3H_r5.ipynb)|
+|180402|self_attn_3H_r5|0.8498|[link](https://nbviewer.jupyter.org/github/simonjisu/nsmc_study/blob/master/Notebooks/selfattn_3H_r5.ipynb)|
 
 * r: n_hops of self attention
 * H: number of hidden layers
+* **model3: self_attn_3H_r5** is not quite good at explanation. It may be overfitted, because of under reasons.
+    1. It classifies labels by only using first parts and last parts of a sentences
+    2. As layers go deeper, it learns from previous hidden layers just for guessing the right label and ignore whaterver the word is.
 
 ## Get a Review Visualization
 
@@ -35,7 +38,7 @@ embedding.
 INSERT ARGUMENTS behind "visualize.py"
 * First
     * [-1] model1: 1 hidden layer, r=5
-    * [-2] model2: 1 hidden layer, r=5
+    * [-2] model2: 1 hidden layer, r=20
     * [-3] model3: 3 hidden layer, r=5
 * Second
     * [-sample_idx] number from 0 to 781
@@ -45,10 +48,10 @@ INSERT ARGUMENTS behind "visualize.py"
 2. Example
 
 ```
-visualize.py -2 720
+visualize.py -2 715
 ```
 
-## Example: Sample of number 720
+## Example: Sample number 715
 
 ![](/figures/model1.png)
 

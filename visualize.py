@@ -145,7 +145,8 @@ def write_html_vis(reviews, A_norm, targets, preds, vis_path, model_path, acc):
     with open(vis_path, 'w', encoding='utf-8') as file:
         print('<html style="margin:0;padding:0;"><body style="margin:0;padding:0;">\n', file=file)
         print('<div style="margin:25px;">\n', file=file)
-        print('<h1>Model: {} | Accuracy: {:.4f}</h1>'.format(model_path.split('/')[-1].split('.')[0], acc), file=file)
+        print('<h1>Model: {} | Total Accuracy: {:.4f}</h1>'.format(model_path.split('/')[-1].split('.')[0], acc), file=file)
+        print('<h2> This Sample Accurary: {:.4f}</h2>'.format((torch.eq(targets, preds).float().sum()/targets.size(0)).data[0]), file=file)
         for review, score, target, preds in zip(reviews, A_norm, targets.data.numpy(), preds.data.numpy()):
             alphas = ['{:.2f}'.format(s) for s in score]
             print('<p style="margin:10px;">\n', file=file)
