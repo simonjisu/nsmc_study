@@ -13,7 +13,7 @@ Sentiment Classification: Classify Good/Bad from movie reviews
 A STRUCTURED SELF-ATTENTIVE SENTENCE EMBEDDING: [https://arxiv.org/pdf/1703.03130.pdf](https://arxiv.org/pdf/1703.03130.pdf)
 
 ## Blog Explanation in Korean
-Link : [simonjisu.github.io](https://simonjisu.github.io/datascience/2018/04/03/nsmcbidreclstmselfattn.html)
+Link : [simonjisu.github.io](https://simonjisu.github.io/paper/2018/04/03/nsmcbidreclstmselfattn.html)
 
 ## Notebooks
 |Date|Model|Accuracy|Link|
