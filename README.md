@@ -1,3 +1,5 @@
+# Welcome in nsmc_study
+
 # Naver Movie Sentiment Classification
 
 ## Data
@@ -62,3 +64,6 @@ python3 visualize.py -2 715
 ![](/figures/model_2.png)
 
 ![](/figures/model_3.png)
+
+
+#Thanks
